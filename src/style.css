@@ -86,3 +86,40 @@ a:hover {
   font-size: inherit;
   width: 60%;
 }
+
+.projectTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-family: 'VT323', 'Consolas', 'Courier New', monospace;
+  color: #00FF00;
+  text-shadow: 0 0 2px #00FF00, 0 0 4px #00FF00;
+}
+
+.projectTable th,
+.projectTable td {
+  border: 1px solid #005500;
+  padding: 0.75rem;
+}
+
+.projectTable th {
+  background-color: #001100;
+  text-align: left;
+}
+
+.projectTable tr:nth-child(even) {
+  background-color: #000800;
+}
+
+.projectTable tr:hover {
+  background-color: #002200;
+}
+
+.projectTable a {
+  color: #00CC66;
+  text-decoration: none;
+}
+
+.projectTable a:hover {
+  text-decoration: underline;
+}
