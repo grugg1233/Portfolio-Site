@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['cmd'])) {
   list($c,$arg) = array_pad(explode(' ', $cmd, 2), 2, '');
   switch(strtolower($c)) {
     case 'help':
-      $_SESSION['cli_history'][] = "help | about | clear | contact | projects";
+      $_SESSION['cli_history'][] = " help | clear | contact | about | projects | work";
       break;
     case 'about':
       $_SESSION['cli_history'][] = "Hello! I am George Attallah, a rising junior in Computer Science (with an Applied Math minor) at NJIT, 
@@ -94,6 +94,13 @@ if ($_SERVER['REQUEST_METHOD']==='POST' && isset($_POST['cmd'])) {
         </table>
         ';
         break; 
+      case 'work': 
+        $_SESSION['cli_history'][] = '<a href="https://www.daktronics.com/en-us"  target="_blank" 
+          rel="noopener noreferrer"><img src="Images/DakLogoWhite.svg" width="150" height="150"></a>
+          
+          <a href="https://lumenaenergy.com/"  target="_blank" 
+          rel="noopener noreferrer"><img src="Images/Lumena-White-Logo.webp" width="150" height="150"></a>'; 
+          break; 
     default:
       $_SESSION['cli_history'][] = "Unknown command: {$c}";
   }
