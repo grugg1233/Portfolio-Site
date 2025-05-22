@@ -6,7 +6,7 @@
 <link rel = "stylesheet" type = "text/css" href = style.css> 
 <!--<link rel="icon" type="image/png" href="images/bitvaultlogo.png">--> 
 <body>
-  
+
    <section>
    <header>
        <?php include("header.inc.php"); ?>
@@ -25,4 +25,6 @@
 
 
 </body>
+
+
 </html>
